@@ -48,7 +48,7 @@ NSString * const PBJGLProgramAttributeNormal = @"a_normal";
 {
     NSLog(@"manjunath.h");
      NSLog(@"manjunath.h");
-    NSLog(@"manjunath.h");
+ 
 
     self = [super init];
     if (self) {
