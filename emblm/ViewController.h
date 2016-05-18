@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
-
+@property (nonatomic,strong) IBOutlet UITextField      *txt_username, *txt_password, *txt_email;
+@property (nonatomic,strong) IBOutlet UILabel          *lbl_or;
+@property (nonatomic,strong) IBOutlet UINavigationBar  *_navbar;
+@property (nonatomic,strong) IBOutlet UIButton         *btn_FBLogin;
+@property (nonatomic,strong) IBOutlet UIView           *errorMsgview;
+@property (nonatomic,strong) IBOutlet UILabel          *lbl_errormsg;
 @end
 

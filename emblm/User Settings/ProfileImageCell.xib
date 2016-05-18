@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Settings"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileImage" rowHeight="160" id="KGk-i7-Jjw" customClass="ProfileImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saR-yP-bmv">
+                        <rect key="frame" x="173" y="33" width="46" height="30"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-2R-3bV">
+                        <rect key="frame" x="173" y="83" width="160" height="36"/>
+                        <state key="normal" image="Choose A Photo">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="choosephoto_clicked:" destination="-1" eventType="touchUpInside" id="Ygg-YT-2VI"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKO-7F-mnb">
+                        <rect key="frame" x="173" y="33" width="160" height="36"/>
+                        <state key="normal" image="Take A Photo">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="takePhoto_clicked:" destination="-1" eventType="touchUpInside" id="seO-Cu-31L"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile pics.png" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-Hc-yn7">
+                        <rect key="frame" x="20" y="14" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="BTA-Vb-JRq"/>
+                            <constraint firstAttribute="height" constant="120" id="rII-wc-KEV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rII-wc-KEV"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eKO-7F-mnb" firstAttribute="leading" secondItem="qsf-Hc-yn7" secondAttribute="trailing" constant="33" id="1LR-DO-yZh"/>
+                    <constraint firstItem="Adk-2R-3bV" firstAttribute="leading" secondItem="eKO-7F-mnb" secondAttribute="leading" id="34Q-W0-sve"/>
+                    <constraint firstItem="eKO-7F-mnb" firstAttribute="top" secondItem="saR-yP-bmv" secondAttribute="top" id="6cA-oV-hWF"/>
+                    <constraint firstItem="Adk-2R-3bV" firstAttribute="top" secondItem="eKO-7F-mnb" secondAttribute="bottom" constant="14" id="6xA-OG-Epf"/>
+                    <constraint firstItem="qsf-Hc-yn7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="9kM-0j-TuV"/>
+                    <constraint firstItem="qsf-Hc-yn7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="Jlo-8v-Okp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eKO-7F-mnb" secondAttribute="trailing" constant="26" id="XDR-He-kgV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qsf-Hc-yn7" secondAttribute="bottom" constant="17" id="bFc-vb-ZPi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Adk-2R-3bV" secondAttribute="trailing" constant="26" id="fnP-Gp-cjx"/>
+                    <constraint firstItem="eKO-7F-mnb" firstAttribute="leading" secondItem="saR-yP-bmv" secondAttribute="leading" id="y22-T9-E0j"/>
+                    <constraint firstItem="eKO-7F-mnb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="zxK-Dw-b8x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_choosephoto" destination="Adk-2R-3bV" id="2OO-pk-uKw"/>
+                <outlet property="btn_takephoto" destination="eKO-7F-mnb" id="vDp-er-JlG"/>
+                <outlet property="userimageView" destination="qsf-Hc-yn7" id="7JB-Pm-Bo9"/>
+            </connections>
+            <point key="canvasLocation" x="333.5" y="194"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Choose A Photo" width="160" height="36"/>
+        <image name="Take A Photo" width="160" height="36"/>
+        <image name="profile pics.png" width="117" height="117"/>
+    </resources>
+</document>

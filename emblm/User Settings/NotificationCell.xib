@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Settings"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Notification" rowHeight="44" id="KGk-i7-Jjw" customClass="NotificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive Email Notifications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4R-Fl-Qqy">
+                        <rect key="frame" x="8" y="15" width="285" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OK6-aI-zSW">
+                        <rect key="frame" x="338" y="10" width="51" height="31"/>
+                        <connections>
+                            <action selector="toggle_moved:" destination="-1" eventType="valueChanged" id="im2-Cm-Zbl"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OK6-aI-zSW" firstAttribute="leading" secondItem="t4R-Fl-Qqy" secondAttribute="trailing" constant="45" id="V2E-HK-Wjx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OK6-aI-zSW" secondAttribute="trailing" constant="10" id="csl-nF-YOc"/>
+                    <constraint firstItem="t4R-Fl-Qqy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="n0k-MH-GHv"/>
+                    <constraint firstItem="t4R-Fl-Qqy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yEW-ay-B5L"/>
+                    <constraint firstItem="OK6-aI-zSW" firstAttribute="centerY" secondItem="t4R-Fl-Qqy" secondAttribute="centerY" id="zp5-jl-9JP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbl_name" destination="t4R-Fl-Qqy" id="ek9-ST-35U"/>
+                <outlet property="toggleView" destination="OK6-aI-zSW" id="TGq-pD-0Cs"/>
+            </connections>
+            <point key="canvasLocation" x="377.5" y="285"/>
+        </tableViewCell>
+    </objects>
+</document>

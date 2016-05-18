@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FollowerCell" rowHeight="69" id="KGk-i7-Jjw" customClass="FollowersCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virat Kohli" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ8-bA-Br5">
+                        <rect key="frame" x="71" y="24" width="185" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hK-Cy-XMG">
+                        <rect key="frame" x="334" y="20" width="72" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="53T-Cf-5iu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Following">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic_small.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-hD-oI3">
+                        <rect key="frame" x="8" y="14" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="HMp-Sp-Ip2"/>
+                            <constraint firstAttribute="height" constant="40" id="K8D-zQ-S5m"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bfI-hD-oI3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="G5Z-u6-xAi"/>
+                    <constraint firstItem="bfI-hD-oI3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Mby-0w-5Zy"/>
+                    <constraint firstItem="VJ8-bA-Br5" firstAttribute="leading" secondItem="bfI-hD-oI3" secondAttribute="trailing" constant="23" id="NPa-ib-L3O"/>
+                    <constraint firstItem="VJ8-bA-Br5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="P6U-V5-pUl"/>
+                    <constraint firstItem="0hK-Cy-XMG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="1" id="X1L-0l-FKE"/>
+                    <constraint firstItem="bfI-hD-oI3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ajg-pl-uxo"/>
+                    <constraint firstItem="VJ8-bA-Br5" firstAttribute="baseline" secondItem="0hK-Cy-XMG" secondAttribute="firstBaseline" id="cfN-OD-WZO"/>
+                    <constraint firstItem="bfI-hD-oI3" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="4" id="dxk-OJ-N93"/>
+                    <constraint firstItem="0hK-Cy-XMG" firstAttribute="baseline" secondItem="VJ8-bA-Br5" secondAttribute="firstBaseline" id="eCA-gi-Ft8"/>
+                    <constraint firstItem="bfI-hD-oI3" firstAttribute="centerY" secondItem="VJ8-bA-Br5" secondAttribute="centerY" id="hQf-Ni-Luf"/>
+                    <constraint firstItem="0hK-Cy-XMG" firstAttribute="leading" secondItem="VJ8-bA-Br5" secondAttribute="trailing" constant="78" id="oGf-TV-Gds"/>
+                    <constraint firstItem="bfI-hD-oI3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="p9i-Qv-gmN"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="G5Z-u6-xAi"/>
+                        <exclude reference="ajg-pl-uxo"/>
+                        <exclude reference="dxk-OJ-N93"/>
+                        <exclude reference="p9i-Qv-gmN"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_follow" destination="0hK-Cy-XMG" id="5U6-FG-1ee"/>
+                <outlet property="imgview" destination="bfI-hD-oI3" id="kT8-Qn-4dF"/>
+                <outlet property="lbl_name" destination="VJ8-bA-Br5" id="PdC-yk-taf"/>
+            </connections>
+            <point key="canvasLocation" x="121.5" y="179.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profilePic_small.jpg" width="50" height="50"/>
+    </resources>
+</document>
