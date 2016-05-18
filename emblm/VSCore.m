@@ -33,7 +33,7 @@ NSString * const AppDocPath=@"appDocPath";
 
 /* */
 
-NSString * const TrendingEmblem=@"https://api.flashbaq.com/v1/emblms/trending?page=2";
+NSString * const TrendingEmblem=@"https://api.flashbaq.com/v1/emblms/trending?page=3";
 NSString * const Activity=@"https://api.flashbaq.com/v1/users/activity?page=%d";
 NSString * const ProfileSetup=@"https://api.flashbaq.com/v1/users/%@";
 NSString * const createEmblm=@"https://api.flashbaq.com/v1/emblms";
