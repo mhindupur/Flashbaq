@@ -29,7 +29,7 @@ static NSTimeInterval const kBadgeAnimationDuration = 0.2;
         [self commonInit];
     }
 
-    NSLog(@"manoj commit");
+    NSLog(@"it's raining heavily");
     return self;
 }
 
